@@ -1,0 +1,14 @@
+.card{
+    width: 400px;
+    height: 600px;
+    background: url("Img/Background.jpg");
+    background-size: cover;
+}
+.container{
+    justify-content: center;
+    display: flex;
+}
+.Icon-Img{
+    width: 90px;
+    height: 90px;
+}

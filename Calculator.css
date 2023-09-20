@@ -1,0 +1,14 @@
+.container{
+    justify-content: center;
+    display: flex;
+}
+.card{
+    background: rgb(0, 10,0);
+    width: 400px;
+    height: 600px;
+}
+.Answersbox{
+    width: 390px;
+    height: 50px;
+    border: 1px solid;
+}
