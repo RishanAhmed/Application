@@ -1,7 +1,7 @@
 .card{
     width: 400px;
     height: 600px;
-    background: url("Background.jpg");
+    background: url("Background.jpg")
     background-size: cover;
 }
 .container{
