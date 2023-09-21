@@ -8,7 +8,52 @@
     height: 600px;
 }
 .Answersbox{
-    width: 390px;
+    margin-left: 10px;
+    text-align: right;
+    width: 350px;
     height: 50px;
     border: 1px solid;
+}
+.col-3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.btn-Operator{
+    width: 70px;
+    height: 65px;
+    color: white;
+    background: orange;
+    border-radius: 50px;
+}
+.btn-Operator:hover{
+    color: white;
+    background: rgb(255, 166, 0);
+    border-radius: 50px;
+}
+.btn-Number{
+    width: 70px;
+    height: 65px;
+    color: white;
+    background: gray;
+    border-radius: 50px;
+}
+.btn-Number:hover{
+    color: white;
+    background: rgb(133, 133, 133);
+    border-radius: 50px;
+}
+.btn-Number0{
+    width: 190px;
+    height: 65px;
+    margin-left: 15px;
+    color: white;
+    background: gray;
+    border-radius: 50px;
+}
+.btn-Number0:hover{
+    color: white;
+    background: rgb(133, 133, 133);
+    border-radius: 50px;
 }

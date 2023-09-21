@@ -14,7 +14,75 @@
         <div class="card">
             <div class="row">
                 <div class="col-sm-9 p-3">
-                    <input type="text" class="form-control Answersbox" id="Answersbox">
+                    
+                    <input type="text" class="form-control Answersbox" id="Answersbox" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="ClearText()">AC</button>
+                </div> 
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick('+/_')">+/_</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="Percentage()">%</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Operator" onclick="BtnClick('-:-')">-:-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(7)">7</button>
+                </div> 
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(8)">8</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(9)">9</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Operator" onclick="BtnClick('*')">X</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(4)">4</button>
+                </div> 
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(5)">5</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(6)">6</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Operator" onclick="BtnClick('-')">-</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(1)">1</button>
+                </div> 
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(2)">2</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick(3)">3</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Operator" onclick="BtnClick('+')">+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-Number0" onclick="BtnClick(0)">0</button>
+                </div> 
+                <div class="col-3">
+                    <button type="button" class="btn btn-Number" onclick="BtnClick('.')">.</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-Operator" onclick="FindResult()">=</button>
                 </div>
             </div>
         </div>
