@@ -4,6 +4,7 @@ let IsPercentageCALCULATOR = false
 let no1 ="";
 let no2 = "";
 let operator ="";
+let numberindex = 1
 let from_btn = ""
 var index = 0;
 var clearone=0;
@@ -42,6 +43,7 @@ function FindResult(){
         operator ="";
         from_btn = ""
         index = 0;
+        numberindex = 1
         clearone=0;
         OperatorIsNotClicked = true
         IsPercentageCALCULATOR = false
@@ -64,6 +66,7 @@ function ClearText(){
     document.getElementById("Answersbox").value = ""
     no1 ="";
     no2 = "";
+    numberindex = 1
     operator ="";
     from_btn = ""
     index = 0;
@@ -79,6 +82,8 @@ function SetNumber(){
     }
 
     else if(index == 1){
+
+        numberindex ++
 
         operator = from_btn
 
@@ -109,7 +114,14 @@ function p(){
     IsPercentageCALCULATOR = true
 }
 function GetNegative(){
-    var notonega1 =  no1 * 2
-    no1 = no1 - notonega1
-    document.getElementById("Answersbox").value = no1
+    if(numberindex == 1){
+        var notonega1 =  no1 * 2
+        no1 = no1 - notonega1
+        document.getElementById("Answersbox").value = no1
+    }
+    else if (numberindex = 2) {
+        var notonega1 =  no2 * 2
+        no2 = no2 - notonega1
+        document.getElementById("Answersbox").value = no2
+    }
 }
