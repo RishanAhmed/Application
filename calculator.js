@@ -1,5 +1,6 @@
 let OperatorIsNotClicked=Boolean();
 
+let IsPercentageCALCULATOR = false
 let no1 ="";
 let no2 = "";
 let operator ="";
@@ -30,12 +31,27 @@ function BtnClick(val){
     from_btn = val
     SetNumber()
     document.getElementById("Answersbox").value = document.getElementById("Answersbox").value+=val
+    
 }
 function FindResult(){
-    var text = no1+operator+no2
-    console.log(text)
-    var result = eval(text)
-    document.getElementById("Answersbox").value = result
+    if(IsPercentageCALCULATOR){
+        var result = no1 * no2 / 100;
+        document.getElementById("Answersbox").value = result
+        no1 ="";
+        no2 = "";
+        operator ="";
+        from_btn = ""
+        index = 0;
+        clearone=0;
+        OperatorIsNotClicked = true
+        IsPercentageCALCULATOR = false
+    }
+    else{
+        var text = no1+operator+no2
+        var result = eval(text)
+        document.getElementById("Answersbox").value = result
+    }
+    
     no1 ="";
     no2 = "";
     operator ="";
@@ -60,8 +76,6 @@ function SetNumber(){
 
         no1 = no1+=from_btn
 
-        console.log(no1)
-
     }
 
     else if(index == 1){
@@ -69,8 +83,6 @@ function SetNumber(){
         operator = from_btn
 
         index ++
-
-        console.log(operator)
 
         document.getElementById("Answersbox").value = ""
 
@@ -87,10 +99,17 @@ function SetNumber(){
 
             no2 =  no2 +=from_btn
 
-            console.log(no2)
-
         }
 
     }
     from_btn = ""
+}
+function p(){
+    document.getElementById("Answersbox").value += "%"
+    IsPercentageCALCULATOR = true
+}
+function GetNegative(){
+    var notonega1 =  no1 * 2
+    no1 = no1 - notonega1
+    document.getElementById("Answersbox").value = no1
 }
