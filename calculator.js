@@ -36,6 +36,13 @@ function FindResult(){
     console.log(text)
     var result = eval(text)
     document.getElementById("Answersbox").value = result
+    no1 ="";
+    no2 = "";
+    operator ="";
+    from_btn = ""
+    index = 0;
+    clearone=0;
+    OperatorIsNotClicked = true
 }
 function ClearText(){
     document.getElementById("Answersbox").value = ""
