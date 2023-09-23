@@ -1,3 +1,6 @@
 function OpenCalc(){
-    window.location.assign("Calculator.html")
+    
+}
+function Try(val){
+    window.location.assign(val)
 }
