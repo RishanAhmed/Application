@@ -1,6 +1,7 @@
 let OperatorIsNotClicked=Boolean();
 let isthisgreaterthanone = Boolean()
 
+var result = 0;
 let IsPercentageCALCULATOR = false
 let no1 ="";
 let no2 = "";
@@ -39,7 +40,7 @@ function BtnClick(val){
 }
 function FindResult(){
     if(IsPercentageCALCULATOR){
-        var result = no1 * no2 / 100;
+        result = no1 * no2 / 100;
         document.getElementById("Answersbox").value = result
         no1 ="";
         no2 = "";
@@ -53,17 +54,19 @@ function FindResult(){
     }
     else if (isthisgreaterthanone){
         no1 = resultno1
-        var text = resultno1+operator+no2
+        var text = result+operator+no2
         result = eval(text)
         document.getElementById("Answersbox").value = result
+        console.log(result)
     }
     else{
         var text = no1+operator+no2
-        var result = eval(text)
+        result = eval(text)
         resultno1 = result
         OperatorIsNotClicked = false
         document.getElementById("Answersbox").value = result
         isthisgreaterthanone = true
+        console.log(result)
     }
     no2 = "";
     operator ="";
