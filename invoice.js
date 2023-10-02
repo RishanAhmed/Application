@@ -256,6 +256,7 @@ function Cl(){
 }
 function Done(){
   document.getElementsByName("Mrp")[CALCINDEX].value = result
+    Calc(v)
   $("#Cal").modal('hide')
 }
 
