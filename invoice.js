@@ -255,9 +255,16 @@ function Cl(){
   $("#staticBackdrop").modal('hide')
 }
 function Done(){
+  
   document.getElementsByName("Mrp")[CALCINDEX].value = result
-    Calc(v)
   $("#Cal").modal('hide')
+  var qty = document.getElementsByName("qty")[CALCINDEX].value;
+    var rate = document.getElementsByName("Mrp")[CALCINDEX].value;
+
+    var amt = qty * rate;
+    document.getElementsByName("Amt")[CALCINDEX].value = amt;
+
+    GetTotal();
 }
 
 
