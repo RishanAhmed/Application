@@ -42,7 +42,7 @@ function FindResult(){
     if(IsPercentageCALCULATOR){
         result = no1 * no2 / 100;
         document.getElementById("Answersbox").value = result
-        no1 ="";
+        no1 = result;
         no2 = "";
         operator ="";
         from_btn = ""
@@ -107,7 +107,9 @@ function SetNumber(){
 
     else if(index == 1){
 
-        numberindex ++
+        if(numberindex == 1){
+            numberindex ++
+        }
 
         operator = from_btn
 
@@ -139,13 +141,13 @@ function p(){
 }
 function GetNegative(){
     if(numberindex == 1){
-        var notonega1 =  no1 * 2
-        no1 = no1 - notonega1
+        var notonega1 =  document.getElementById("Answersbox").value * 2
+        no1 = document.getElementById("Answersbox").value - notonega1
         document.getElementById("Answersbox").value = no1
     }
     else if (numberindex = 2) {
-        var notonega1 =  no2 * 2
-        no2 = no2 - notonega1
+        var notonega1 =  document.getElementById("Answersbox").value * 2
+        no2 = document.getElementById("Answersbox").value - notonega1
         document.getElementById("Answersbox").value = no2
     }
 }
