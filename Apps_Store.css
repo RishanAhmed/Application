@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.Main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border-radius: 25px;
+    background: black;
+}
+.disply{
+    width: 370px;
+    height: 570px;
+    border-radius: 25px;
+    background: url(Img/Background.jpg);
+    background-size: cover;
+}
+.header-Disply{
+    width: 370px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+.notch{
+    width: 150px;
+    height: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    width: 50px;
+    height: 3px;
+    border-radius: 50px;
+    background: rgb(61, 61, 61);
+}
+.cam{
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: rgb(46, 44, 44);
+}
+.input-Box{
+    margin: 5px;
+    width: 370px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search{
+    padding-left: 5px;
+    width: 340px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.2px solid black;
+}
+.blank_space{
+    width: 180px;
+}
+.row{
+    width: 350px;
+    height: 90px;
+}
+.img{
+    width: 350px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.Btn{
+    width: 75px;
+    height: 35px;
+    border-radius: 25px;
+    border: 2px solid green;
+    background: white;
+    font-weight: 700;
+    font-size: 15px;
+    color: green;
+    transition: 0.3ms;
+}
+.Btn:hover{
+    width: 75px;
+    height: 35px;
+    border-radius: 25px;
+    border: 2px solid green;
+    background: green;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    transition: 0.3ms;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
