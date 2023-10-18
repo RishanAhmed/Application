@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.Main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370PX;
+    height: 600px;
+    border-radius: 25px;
+    background: black;
+}
+.disply{
+    width: 340px;
+    height: 570px;
+    border-radius: 25px;
+    background: url(Img/Background.jpg);
+    background-size: cover;
+}
+.header-Disply{
+    width: 340px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+.notch{
+    width: 150px;
+    height: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar{
+    width: 50px;
+    height: 3px;
+    border-radius: 50px;
+    background: rgb(61, 61, 61);
+}
+.cam{
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: rgb(46, 44, 44);
+}
+.Icon-Img{margin: 10px;
+    width: 90px;
+    height: 90px;
+}
