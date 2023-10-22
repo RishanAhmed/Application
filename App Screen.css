@@ -53,8 +53,13 @@
     border-radius: 50px;
     background: rgb(46, 44, 44);
 }
-.Icon-Img{
-    margin: 10px;
+.icon{
     width: 90px;
     height: 90px;
+}
+.body-Disply{
+    display: flex;
+    margin-top: 5px;
+    height: 540px;
+    justify-content: center;
 }
