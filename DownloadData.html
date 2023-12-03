@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,92 +27,85 @@
 
 <body>
 
-    <div class="container">
+    <div class="Main">
 
-        <div class="card">
+        <div class="Container">
 
-            <div class="card-header text-center">
+            <div class="disply">
 
-                <h1>Download Report</h1>
+                <div class="header-Disply">
 
-            </div>
+                    <div class="notch">
 
-            <div class="card-body">
+                        <div class="bar">
 
-                <div class="row">
 
-                    <div class="col-6">
+                        </div>
+                        
+                        <div class="cam">
 
-                        <div class="input-group mb-3">
-
-                            <span class="input-group-text" >Starting Date</span>
-
-                            <input type="date" class="form-control" placeholder="Date" required minlength="10" id="StartingDate"  name="Date">
 
                         </div>
 
                     </div>
-
-                    <div class="col-6">
-
-                        <div class="input-group mb-3">
-
-                            <span class="input-group-text" >Ending Date</span>
-
-                            <input type="date" class="form-control" placeholder="Date" required minlength="10" id="EndingDate"  name="Date" onchange="GetReport()">
-
-                        </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-6"><button class="btn btn-primary" type="button" onclick="Download()">Download</button></div>
-
-                    </div>
-
-                    <table class="table table-striped">
-
-                        <tbody  id="Mytablebody" class="d-none"></tbody>
-
-                    </table>
 
                 </div>
 
+                <div class="body-Disply">
+                    
+                    
+
+                        <div class="card-header text-center">
+            
+                            <h1>Download Report</h1>
+            
+                        </div>
+            
+                        <div class="card-body">
+            
+                            <div class="row">
+            
+                                <div class="input-group mb-3">
+            
+                                    <span class="input-group-text" >Starting Date</span>
+            
+                                    <input type="date" class="form-control" placeholder="Date" required minlength="10" id="StartingDate" onchange="Split_Start_Date()"  name="Date">
+            
+                                </div>
+            
+                            </div>
+            
+                            <div id="row">
+            
+                                <div class="input-group mb-3">
+            
+                                    <span class="input-group-text" >Ending Date</span>
+            
+                                    <input type="date" class="form-control" placeholder="Date" required minlength="10" id="EndingDate"  name="Date" onchange="Split_End_Date()">
+            
+                                </div>
+            
+                            </div>    
+            
+                            <div class="row btn-rr">
+            
+                                <div class="col-6"><button class="btn btn-primary" type="button" onclick="Download()">Download</button></div>
+            
+                            </div>
+            
+                            <table class="table table-striped">
+            
+                                <tbody  id="Mytablebody" class="d-none"></tbody>
+            
+                            </table>
+            
+                        </div>
+            
+                    
+
+                </div>
             </div>
-
         </div>
-
     </div>
-
 </body>
-
 </html>
-
-<div class="modal fade" id="Load" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-
-    <div class="modal-dialog modal-dialog-centered bg-transparent border border-0">
-
-        <div class="modal-content bg-transparent border border-0">
-
-            <div class="modal-body bg-transparent border border-0">
-
-                <div class="d-flex justify-content-center bg-transparent">
-
-                    <div class="spinner-border text-danger" role="status">
-    
-                        <span class="visually-hidden">Loading...</span>
-    
-                    </div>
-    
-                </div>
-
-            </div>
-
-        </div>
-        
-        </div>
-
-    </div>
-
-</div>

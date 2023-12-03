@@ -1,6 +1,18 @@
 var TotalAmount = 0
 
-var appsscript = "https://script.google.com/macros/s/AKfycbyahLdKFH-q46YI6bhh3_wjZ1zr1C-gNli3-4gvqhKsTgSe-3MR2TbGlGNjGnFoqADw/exec"
+let sy = 0
+let sm = 0
+let sd = 0
+
+let ey = 0
+let em = 0
+let ed = 0
+
+let StartffDate = 0
+
+let EndingDate = 0
+
+var appsscript = "https://script.google.com/macros/s/AKfycbzL-TDjgiNr9EaoHBkWEAAYXWLsdlwMXbEoPLSTS-AmVybVHDje8ioAbavah_6kimQ/exec"
 
 function Download(){
         var Dtable = document.getElementById('Mytablebody');
@@ -24,13 +36,9 @@ function GetReport(){
 
     row = '<tr>'+column+'</tr>'
 
-    var StartDate = $("#StartingDate").val()
-
-    var EndDate =  $("#EndingDate").val()
-
     $("#Load").modal('show')
 
-    $.getJSON(appsscript+"?page=DownloadData&startingdate="+StartDate+"&endingdate="+EndDate,
+    $.getJSON(appsscript+"?page=DownloadData&startingdate="+StartffDate+"&endingdate="+EndingDate,
 
     function(data){
 
@@ -84,4 +92,42 @@ function GetReport(){
     
     })
 
+}
+
+function Split_Start_Date() {
+
+    let val = document.getElementById("StartingDate").value
+    StartffDate = document.getElementById("StartingDate").value
+    
+    const StartDate = val.split("-")
+
+    console.log(StartDate)
+
+    sy = StartDate[0]
+    sm = StartDate[1]
+    sd = StartDate[2]
+
+    console.log("Date"+sd)
+    console.log("Month"+sm)
+    console.log("Year"+sy)
+}
+
+function Split_End_Date() {
+
+    let val = document.getElementById("EndingDate").value
+    EndingDate = document.getElementById("EndingDate").value
+    
+    const StartDate = val.split("-")
+
+    console.log(StartDate)
+
+    ey = StartDate[0]
+    em = StartDate[1]
+    ed = StartDate[2]
+
+    console.log("Date"+ed)
+    console.log("Month"+em)
+    console.log("Year"+ey)
+
+    GetReport()
 }
