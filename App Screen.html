@@ -8,11 +8,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
     <title>Document</title>
 
-    <script src="App Screen.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="App Screen.css">
 
@@ -22,7 +20,7 @@
 
     <div class="Main">
 
-        <div class="Container">
+        <div class="Container" style="display: none;">
 
             <div class="disply">
 
@@ -48,7 +46,34 @@
 
                 <div class="body-Disply">
 
-                    <img src="Img/inv.png" class="icon" alt="">
+                    <div class="image-group">
+
+                        <img src="Img/DownloadData.png" class="icon" id="DownloadData" alt="">
+
+                        <img src="Img/invoice.png" class="icon" id="invoice" alt="">
+
+                        <img src="Img/google.png" class="icon" id="google" alt="">
+
+                    </div>
+
+                    <div class="buttons">
+
+                        <div class="Uninstall">
+
+                            <button class="Btn" onclick="Uninstall_App()">Uninstall</button>
+
+
+                        </div>
+
+                        <div class="install">
+
+                            <button class="Btn" onclick="Add_App()">Install</button>
+
+                            <button class="Btn" style="display: none;">Open</button>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -58,6 +83,7 @@
 
     </div>
 
+    <script src="App Screen.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,4 @@
-let appsscriptlink = ""
-
 function Open(val){
-    sessionStorage.setItem("App",val)
+    localStorage.setItem("App",val)
     window.location.assign("App Screen.html")
 }

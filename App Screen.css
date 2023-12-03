@@ -58,8 +58,44 @@
     height: 90px;
 }
 .body-Disply{
-    display: flex;
     margin-top: 5px;
     height: 540px;
+}
+.image-group{
+    display: flex;
     justify-content: center;
+    width: 340px;
+}
+.Btn{
+    width: 80px;
+    height: 35px;
+    border-radius: 25px;
+    border: 2px solid green;
+    background: white;
+    font-weight: 700;
+    font-size: 15px;
+    color: green;
+    transition: 0.3ms;
+}
+.Btn:hover{
+    width: 80px;
+    height: 35px;
+    border-radius: 25px;
+    border: 2px solid green;
+    background: green;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    transition: 0.3ms;
+}
+.buttons{
+    width: 340px;
+    display: flex;
+    justify-content: center;
+}
+.install,.Uninstall{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 170px;
 }
